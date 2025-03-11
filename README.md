@@ -1,6 +1,6 @@
 # FlowerTune LLM on Medical Dataset
 
-This directory conducts federated instruction tuning with a pretrained [Qwen2.5-1.5B-Instruct](https://huggingface.co/mistralai/Qwen2.5-1.5B-Instruct-v0.3) model on a [Medical dataset](https://huggingface.co/datasets/medalpaca/medical_meadow_medical_flashcards).
+This directory conducts federated instruction tuning with a pretrained [Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct) model on a [Medical dataset](https://huggingface.co/datasets/medalpaca/medical_meadow_medical_flashcards).
 We use [Flower Datasets](https://flower.dev/docs/datasets/) to download, partition and preprocess the dataset.
 Flower's Simulation Engine is used to simulate the LLM fine-tuning process in federated way,
 which allows users to perform the training on a single GPU.
@@ -51,7 +51,7 @@ All settings are defined in `pyproject.toml`.
 the checkpoint like is [here](https://drive.google.com/drive/folders/1yvRW7lcsUVVMZkV0T3la7FHfm463ym6z?usp=drive_link) 
 ## Running the challenge
 
-First make sure that you have got the access to [Qwen2.5-1.5B-Instruct](https://huggingface.co/mistralai/Qwen2.5-1.5B-Instruct-v0.3) model with your Hugging-Face account. You can request access directly from the Hugging-Face website.
+First make sure that you have got the access to [Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct) model with your Hugging-Face account. You can request access directly from the Hugging-Face website.
 Then, follow the instruction [here](https://huggingface.co/docs/huggingface_hub/en/quick-start#login-command) to log in your account. Note you only need to complete this stage once in your development machine:
 
 ```bash
